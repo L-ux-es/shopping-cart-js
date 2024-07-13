@@ -1,0 +1,119 @@
+:root {
+    --nbar-font-size: 30px;
+    --border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 30px;
+}
+
+.navbar h2 {
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: var(--nbar-font-size);
+}
+
+.ing-span {
+    color: rgb(153, 229, 169);
+    text-shadow: 1px 1px salmon;
+}
+
+.cloth-span {
+    color: rgb(129, 186, 255);
+    text-shadow: 1px 1px greenyellow;
+}
+
+.cart {
+    background-color: #fff;
+    color: #212529;
+    font-size: var(--nbar-font-size);
+    padding: 5px;
+    border-radius: var(--border-radius);
+    position: relative;
+
+}
+
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: rgb(255, 120, 61);
+    color: white;
+    padding: 3px;
+    border-radius: var(--border-radius);
+
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.item {
+    border: 2px solid #212529;
+    border-radius: var(--border-radius);
+    box-shadow: 6px 3px 10px  rgb(129, 186, 255);
+}
+
+.item img {
+    object-fit: cover;
+    
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+
+}
+
+.bi-dash-lg{
+    color: rgb(150, 17, 7);
+}
+.bi-plus-lg{
+    color:rgb(9, 125, 8) ;
+}
+
+@media (max-width:1000px){
+    .shop{
+        grid-template-columns:repeat(2,223px);
+    }}
+@media (max-width:500px){
+    .shop{
+        grid-template-columns:repeat(1,223px);
+    }
+}
