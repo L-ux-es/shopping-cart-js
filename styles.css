@@ -49,6 +49,10 @@ body {
 
 }
 
+i{
+    cursor:pointer;
+}
+
 .cartAmount {
     position: absolute;
     top: -15px;
@@ -107,6 +111,8 @@ align-items: center;
 .bi-plus-lg{
     color:rgb(9, 125, 8) ;
 }
+
+
 
 @media (max-width:1000px){
     .shop{
