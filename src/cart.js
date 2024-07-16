@@ -25,17 +25,24 @@ let generateCartItems = () => {
             <p>${name}</p>
             <p class="cart-item-price">$ ${price}</p>
         </h4>
-        <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
+        <svg onclick="removeItem(${id})" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+</svg>
+       
     </div>
     <div class="buttons">
-        <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
+          <svg onclick="decrement(${id})" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+</svg>
         <div id=${id} class="quantity">${item}</div>
-        <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
+       <svg onclick="increment(${id})" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+</svg>
     </div>
     <h3>$ ${item * price}</h3>
   </div>
 </div>`;
-        }));
+        }).join(""));
     } else {
         ShoppingCart.innerHTML = ``;
         label.innerHTML = `<h2>Cart is empty</h2>
