@@ -41,12 +41,12 @@ let increment = (id) => {
     let selectedItem = id;
     let search = basket.find((x) => x.id === selectedItem.id);
     if (search === undefined) {
-        basket.push({id: selectedItem.id, item: 1});
+        basket.push({id: selectedItem.id, item: 1})
+        search={id: selectedItem.id, item: 1}
     } else {
         search.item += 1;
     }
     localStorage.setItem("data", JSON.stringify(basket));
-   //Todo error here
     update(selectedItem.id, search.item);
 };
 

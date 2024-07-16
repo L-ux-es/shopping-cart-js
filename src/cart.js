@@ -59,6 +59,7 @@ let increment = (id) => {
     let search = basket.find((x) => x.id === selectedItem.id);
     if (search === undefined) {
         basket.push({id: selectedItem.id, item: 1});
+        search={id: selectedItem.id, item: 1}
     } else {
         search.item += 1;
     }
