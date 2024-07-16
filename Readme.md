@@ -12,9 +12,9 @@
 
 
 ## Resources
-Icons: [Boostrap-icons](icons.getboostrap.com)
+Icons: [Boostrap-icons](https://icons.getboostrap.com)
 
-Color palette: [Color Palettes](coolors.co/palettes/trending)
+Color palette: [Color Palettes](https://coolors.co/palettes/trending)
 
 
 ## Acknowledgement
